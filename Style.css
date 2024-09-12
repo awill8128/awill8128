@@ -1,0 +1,546 @@
+/* Define your brand colors */
+:root {
+    --primary-blue: #0A4DAB;
+    --dark-blue: #143058;
+    --white: #FFFFFF;
+    --light-blue: #809CBA;
+    --light-gray: #EEEEEE;
+    --off-white: #F5F7FF;
+    --light-blue-gray: #CCD9EC;
+}
+
+/* Font from Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Default text styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center; /* Center text horizontally */
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--primary-blue);
+}
+#Hero p {
+    text-align: center
+}
+
+/* Link stylings */
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+/* Button stylings */
+.button {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--light-blue);
+    color: #FFFFFF
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Unique IDs for section blocks in HTML */
+#hero-section {
+    background-color: var(--off-white);
+    display: block;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#hero span {
+    display: block;
+}
+
+#work-section {
+    background-color: var(--light-blue-gray);
+    padding: 50px 0;
+}
+
+#contact-section {
+    background-color: var(--light-gray);
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: var(--primary-blue);
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Ensure header is positioned relative for absolute positioning of child elements */
+}
+
+header img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+nav a {
+    color: var(--white);
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+/* Base navigation styling */
+nav {
+    width: auto;
+    float: right;
+    margin-top: 10px;
+}
+/* Hide menu items on mobile by default */
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle li {
+    list-style-type: none;
+}
+
+/* Style for responsive navigation */
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  } 
+/* Hero Section styling */
+#hero {
+    text-align: center;
+    padding: 20
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+/* Container and Row classes */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Work Section styling */
+#work {
+    background-color: var(--light-blue-gray);
+    color: var(--dark-blue);
+    padding: 50px 0;
+}
+
+#work h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.project {
+    margin-top: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.project a {
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Footer (Contact) Section styling */
+footer {
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--primary-blue);
+}
+
+footer a:hover {
+    color: var(--light-blue);
+}
+
+footer .container {
+    max-width: 600px;
+}
+
+footer .container img {
+    height: 24px;
+    margin: 0 5px;
+}
+
+/* Project Section styling */
+#caseStudyNav a {
+    color: var(--primary-blue);
+}
+
+/* Transitions */
+button,
+a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container for SVG */
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* SVG Styling and Animation */
+#beach-scene {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Animate Sun Rising and Setting */
+@keyframes sunAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animate Ocean Waves */
+@keyframes oceanWaves {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+#beach-scene .sun {
+    animation: sunAnimation 5s infinite ease-in-out;
+}
+
+#beach-scene .ocean {
+    animation: oceanWaves 2s infinite linear;
+}
+
+/* Columns */
+.col-sm-1 {
+    width: 8.33%;
+}
+
+.col-sm-2 {
+    width: 16.66%;
+}
+
+.col-sm-3 {
+    width: 25%;
+}
+
+.col-sm-4 {
+    width: 33.33%;
+}
+
+.col-sm-5 {
+    width: 41.66%;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.col-sm-7 {
+    width: 58.33%;
+}
+
+.col-sm-8 {
+    width: 66.66%;
+}
+
+.col-sm-9 {
+    width: 75%;
+}
+
+.col-sm-10 {
+    width: 83.33%;
+}
+
+.col-sm-11 {
+    width: 91.66%;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 639px) {
+    header {
+        text-align: center; /* Center text on mobile */
+    }
+
+    nav {
+        float: none; /* Remove floating on mobile */
+        margin-top: 10px; /* Ensure margin is consistent */
+        text-align: center; /* Center navigation links on mobile */
+    }
+
+    nav a {
+        display: block; /* Stack navigation links vertically on mobile */
+        margin: 5px 0; /* Add space between links */
+    }
+
+    header img {
+        display: block; /* Ensure logo is centered */
+        margin: 0 auto; /* Center logo horizontally */
+    }
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: left;
+        /* Align text to left for larger screens */
+        padding: 20px 0 13px;
+        /* Adjust padding for medium devices */
+    }
+
+    nav {
+        float: right; /* Float navigation to the right */
+        margin-top: 4px; /* Adjust margin for medium devices */
+        text-align: right; /* Align navigation text to the right */
+    }
+
+    nav a {
+        display: inline-block; /* Display navigation links inline */
+        margin: 0 10px; /* Space out navigation links */
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+    nav > ul > li {
+        display: inline-block;
+      }
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+      .navtoggle li:last-child {
+        display: none;
+      }
+      nav > ul {
+        margin: .3em 0;
+      }     
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* Columns */
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    header {
+        padding: 20px 0; /* Keep padding consistent on larger screens */
+    }
+
+    nav {
+        float: right; /* Ensure navigation remains floated right */
+    }
+
+    nav a {
+        font-size: 18px; /* Increase font size for larger screens */
+        margin: 0 15px; /* Add more space between links */
+    }
+    /* Columns */
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
