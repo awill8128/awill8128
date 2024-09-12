@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex's Portfolio</title>
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="CSS/Style.css">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <header><!--orange /section -->
+    <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+            <img src="Images/Name_logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+  <main>
+    <!--Case Study-->
+    <div class="container">
+      <div>
+        <picture>
+          <img src="Images/Mentorme_cover_mockup1200px.png"
+            alt="Portfolio Website: Designing and coding a responsive website by Alexandria Williams">
+        </picture>
+      </div>
+
+      <div id="introduction">
+        <h1 class="center">Introduction</h1>
+        <ul>
+          <li><em>Duration</em>: 6 months</li>
+          <li><em>Role</em>: UX Designer, UX Researcher, Frontend Developer</li>
+          <li><em>Tools</em>: HTML, CSS, JavaScript, Figma, GitHub</li>
+          <li><em>Overview</em>: During my UX Design course with CareerFoundry, I initiated MentorMe as my 2nd design
+            project. Employing the Design Thinking Process, I crafted low-mid-high fidelity prototypes and performed
+            user testing to pinpoint areas for design enhancements.</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div>
+          <nav id="caseStudyNav">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#wireframes">Wireframes</a></li>
+              <li><a href="#testing">Testing</a></li>
+              <li><a href="#takeaways">Takeaways</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="background">
+        <h1 class="center">Background</h1>
+        <em>Problem Statement</em>
+        <p>
+          Many individuals, particularly those from lower-income groups or with limited education, often experience
+          heightened anxiety and hesitation when it comes to seeking expert advice through in-person interactions. This
+          anxiety is a significant barrier to accessing the guidance and knowledge they require to find the guidance
+          needed to succeed in a mentorship. </p>
+
+
+        <em>Challenges</em>
+        <p>
+          See <a href="#takeaways">Takeaways</a> below for more details.
+        </p>
+        <ul>
+          <li>Keeping a mobile-first mindset</li>
+          <li>Adjusting color contrast for accessibility without compromising aesthetics</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div id="research">
+        <h1 class="center"> Research Goals</h1>
+        <ul>
+          <li>Explore the user’s preferences, preferred communication methods, frequency of interaction, and mentorship
+            styles (e.g., coaching, advising, hands-on guidance) from both mentors and mentees.</li>
+          <li>Explore potential pain points faced by mentors and mentees during their mentorship journey and identify
+            effective solutions to address them.</li>
+          <li>Identify the key information needed for user’s to find the right mentor.</li>
+        </ul>
+        <p>I conducted user interviews where participants answered questions regarding their behaviors/attitudes,
+          frustration, and needs/goals from using a mentorship application. 
+
+          Check out the user interviews and questions here.
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1 class="center">Sitemap Refinement: Enhancing User Journeys </h1>
+        <p>
+          conducted a hybrid card sorting exercise to streamline our original sitemap and potentially introduce new
+          pages. Here's what we aimed for and what I discovered:
+        </p>
+        <ul>
+          <li>Strong consensus on categories like "Resources", "Mentors", and "User Profiles".</li>
+          <li>Varying agreement levels observed in categories such as "Calendar" and "Messages"</li>
+          <li>Insights from the exercise led to the addition of features like "goal tracking" and "notifications".</li>
+        </ul>
+        <picture>
+          <source media="(max-width:600px)" srcset="images/Cardsorting_mentorme.png"> <img
+            src="images/Cardsorting_mentorme.png" alt="Profile Image">
+        </picture>
+        <p>Following the card sorting exercise, I refined the sitemap to better align with user preferences and
+          navigation patterns. This optimization ensured a more intuitive and user-friendly structure, enhancing the
+          overall usability of the platform.</p>
+        <picture>
+          <source media="(max-width:600px)" srcset="Images/Mentorme.sitemap.copy.png"> <img
+            src="Images/Mentorme.sitemap.copy.png" alt="Profile Image">
+        </picture>
+      </div>
+
+      <hr>
+
+      <div id="wireframes" class="row">
+        <h1 class="center">Elevating with Prototyping and Wireframing</h1>
+        <div>
+          <p>
+            With some wireframes and all the content on hand, I began <span class="highlight">coding using Atom</span>.
+          </p>
+          <p>
+            I started my design process with low-fidelity wireframes, creating a foundational structure and functionality.
+            When creating mid-fidelity wireframes, I refined some layouts while maintaining flexibility for adjustments
+            based on user feedback, finally creating high-fidelity wireframes that detail the final product's design,
+            features, and interactions.
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <div id="testing">
+        <h1 class="center">Testing and Iterations</h1>
+        <p>
+          In preparation for refining the Mentor Me application, I created a usability test plan to assess its current
+          state. The plan aimed to evaluate the prototype's functionality and user experience through a series of 3
+          structured tasks with 6 participants. Using the Jakob Nielsen’s error severity rating scale, I was able to
+          find usability issues to create some improvements.
+        </p>
+        <p>In the comprehensive usability testing of Mentor Me's mobile and desktop applications, participants reported
+          an overall positive experience. While the overall feedback was favorable I still found some specific areas for
+          enhancement to refine the user experience.
+        </p>
+        <h2 class="center"> Usability Test Results</h2>
+        <ul>
+          <li>Add labels for mentor profiles on the mobile side to improve clarity and navigation.</li>
+          <li>Expand the range of categories and topics on the resources page for a more comprehensive selection of
+            content.</li>
+          <li>Implement a prompt for users to message mentors seamlessly, enhancing interaction dynamics.</li>
+          <li>Offer an additional option for users to schedule calls directly on the mentor's profile to optimize the
+            booking process.</li>
+        </ul>
+        <picture>
+          <source srcset="Images/Lowfiwireframes.png" media="(max-width:767px)">
+          <img src="Images/Lowfiwireframes.png" class="resize" alt="low-fidelity wireframes">
+        </picture>
+        <picture>
+          <source srcset="Images/Midfiwireframes.png" media="(max-width:767px)">
+          <img src="Images/Midfiwireframes.png" class="resize" alt="mid-fidelity wireframes">
+        </picture>
+        <picture>
+          <source srcset="Images/Highfiwireframes.png" media="(max-width:767px)">
+          <img src="Images/Highfiwireframes.png" class="resize" alt="high-fidelity wireframes">
+        </picture>
+      </div>
+
+      <div id="takeaways">
+        <h1 class="center">Takeaways</h1>
+        <p>
+          In this case study, I explore the concept of continuously enhancing design. It's about the ongoing process of
+          refining and perfecting user experiences. I share my journey from research to prototyping, emphasizing the
+          significance of perpetual learning and evolution. By embracing feedback and maintaining flexibility, I
+          illustrate how design is a continual journey of growth and improvement.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container"><!--yellow / container -->
+      <p>Contact me at: <a href="tel:+16266468128">(626)-646-8128</a> or via <a href="awill8128@gmail.com">email</a></p>
+      <p><a href="#">Message Me</a></p>
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Link to scripts.js -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="Javascript/scripts.js"></script>
+</body>
+
+</html>

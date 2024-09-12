@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Portfolio</title>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="CSS/Style.css"> <!--link to the CSS file -->
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header><!--orange /section -->
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <img src="Images/Name_logo.png" alt="Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="Hero"><!--orange /section -->
+            <div class="container"><!--yellow /container -->
+                <h1>Welcome to My Portfolio!</h1>
+                <p>This is where you'll find information about my work, projects, and more.</p>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work-section">
+            <div class="container">
+                <h2>My Work</h2>
+                <div class="row project">
+                    <div class="col-md-6 col-lg-7">
+                        <picture>
+                            <source media="(max-width:600px)" srcset="Images/MentorMephoto600px.png"> <img
+                                src="Images/MentorMephoto600px.png" alt="mentorme photo">
+                        </picture>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <h3>Mentor Me Project</h3>
+                        <p>During my UX Design course with CareerFoundry, I initiated MentorMe as my 2nd design project.
+                            Employing the Design Thinking Process, I crafted low-mid-high fidelity prototypes and
+                            performed user testing to pinpoint areas for design enhancements.</p>
+                        <a class="button button-read-more" href="mentorme.html">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Project Section with Beach Scene -->
+        <div class="new-project-section">
+            <div class="container">
+                <div class="svg-container">
+                    <svg id="beach-scene" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="500"
+                        height="250">
+                        <!-- Sky -->
+                        <rect width="200" height="100" fill="#87CEEB" />
+
+                        <!-- Ocean -->
+                        <rect class="ocean" y="60" width="200" height="40" fill="#4682B4" />
+
+                        <!-- Sand -->
+                        <rect y="80" width="200" height="20" fill="#F4A460" />
+
+                        <!-- Sun -->
+                        <circle class="sun" cx="170" cy="30" r="15" fill="#FFD700" />
+
+                        <!-- Palm Tree -->
+                        <rect x="30" y="65" width="10" height="30" fill="#8B4513" />
+                        <path d="M35,65 Q25,45 20,55 Q15,45 10,55 Q5,45 0,55" fill="#228B22" />
+                        <path d="M35,65 Q40,45 45,55 Q50,45 55,55 Q60,45 65,55" fill="#228B22" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container"><!--yellow / container -->
+            <p>Contact me at: <a href="tel:+16266468128">(626)-646-8128</a> or via <a
+                    href="awill8128@gmail.com">email</a></p>
+            <p><a href="#">Message Me</a></p>
+            <div>
+                <!-- Icon placeholders -->
+                <a href="https://www.linkedin.com/in/alexandriamanaewilliams/"><img src="Images/linkedin_icon.svg"
+                        alt="Linkedin"></a>
+            </div>
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Link to scripts.js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="Javascript/scripts.js"></script>
+</body>
+
+</html>
